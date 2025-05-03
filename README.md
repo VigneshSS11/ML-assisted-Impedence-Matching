@@ -22,11 +22,11 @@
 **Mathematical Foundation**:
 1. Reflection Coefficient Optimization:
 
-   \Gamma = \frac{Z_L - Z_0}{Z_L + Z_0} \rightarrow \text{Target } |\Gamma| input(0);
+   $\Gamma = \frac{Z_L - Z_0}{Z_L + Z_0} \rightarrow \text{Target } |\Gamma| input(0);
     memcpy(input->data.f, s11_values, sizeof(float)*3);
     interpreter->Invoke();
     set_varactors(interpreter->output(0)->data.f);
-    update_capacitors(interpreter->output(1)->data.i);
+    update_capacitors(interpreter->output(1)->data.i);$
 }
 
 **Component Stack**:
@@ -67,15 +67,11 @@ make deploy target=stm32h7
 This work builds upon fundamental RF principles while introducing ML innovations:
 
 1. **Impedance Matching Theory** [2,4]  
-   ```
-   Z_{\text{match}} = \sqrt{Z_{\text{source}} \cdot Z_{\text{load}}}
-   ```
+   $Z_{\text{match}} = \sqrt{Z_{\text{source}} \cdot Z_{\text{load}}}$
 2. **Smith Chart Optimization** [4]  
-   ```
-   Z_{\text{norm}} = \frac{Z}{Z_0} = \frac{1+\Gamma}{1-\Gamma}
-   ```
+   $Z_{\text{norm}} = \frac{Z}{Z_0} = \frac{1+\Gamma}{1-\Gamma}$
 3. **Broadband Techniques** [5,7]  
-   Adaptive LC networks with frequency-weighted loss
+   $Adaptive LC networks with frequency-weighted loss$
 
 ## 🌟 Future Roadmap
 - [ ] 6G mmWave extension (28/39GHz)
